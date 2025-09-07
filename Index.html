@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete GitHub Setup - al-syeds-mart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #00ad9f 0%, #096fb9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #00ad9f 0%, #096fb9 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .status {
+            background: #fff4f4;
+            border-left: 5px solid #ff5252;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .step {
+            background: #f0f9ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .step-number {
+            background: #096fb9;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: #096fb9;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .btn {
+            display: block;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .btn-primary {
+            background: #096fb9;
+            color: white;
+        }
+        
+        .btn-primary:active {
+            background: #085a9d;
+        }
+        
+        .btn-secondary {
+            background: #f1f1f1;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+        
+        .btn-secondary:active {
+            background: #e1e1e1;
+        }
+        
+        .tip {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #00ad9f;
+        }
+        
+        .copy-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .mobile-tip {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #ffb300;
+        }
+        
+        .repo-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Complete GitHub Setup</h1>
+            <p>al-syeds-mart Repository</p>
+        </header>
+        
+        <div class="content">
+            <div class="repo-info">
+                <h2>Repository Status</h2>
+                <div class="info-item">
+                    <span class="info-label">Repository Name:</span>
+                    <span>al-syeds-mart</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Stars:</span>
+                    <span>0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Forks:</span>
+                    <span>0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Branch:</span>
+                    <span>main</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Files:</span>
+                    <span>Only README.md</span>
+                </div>
+            </div>
+            
+            <div class="status">
+                <p>Your repository is set up but doesn't have a website files yet. This is why your Netlify site shows "Page not found".</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <h2>Create Index.html File</h2>
+                <p>You need to add an index.html file to your repository. This will be your website's homepage.</p>
+                
+                <div class="code-block" id="htmlCode">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;al-syeds-mart&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7f9;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #096fb9;
+        }
+        .btn {
+            display: inline-block;
+            background: #096fb9;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Welcome to al-syeds-mart&lt;/h1&gt;
+        &lt;p&gt;Our website is coming soon!&lt;/p&gt;
+        &lt;p&gt;We're working on something amazing. Stay tuned!&lt;/p&gt;
+        &lt;a href="#" class="btn"&gt;Learn More&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </div>
+                
+                <button class="copy-btn" onclick="copyCode()">Copy HTML Code</button>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h2>Add File to GitHub</h2>
+                <p>Add the index.html file to your GitHub repository:</p>
+                
+                <div class="mobile-tip">
+                    <p>📱 On mobile, use the GitHub app or mobile website</p>
+                </div>
+                
+                <p>1. Go to your repository</p>
+                <p>2. Tap "Add file" → "Create new file"</p>
+                <p>3. Name the file "index.html"</p>
+                <p>4. Paste the copied code</p>
+                <p>5. Scroll down and tap "Commit changes"</p>
+                
+                <a href="https://github.com" class="btn btn-primary">Go to GitHub</a>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h2>Update README.md</h2>
+                <p>Improve your README.md file to describe your project:</p>
+                
+                <div class="code-block" id="readmeCode">
+# al-syeds-mart
+
+Welcome to al-syeds-mart website repository!
+
+This is a website project deployed on Netlify.
+
+## Website URL
+https://al-syeds-mart.netlify.app
+
+## Features
+- Responsive design
+- Modern layout
+- Easy to navigate
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Netlify for deployment
+                </div>
+                
+                <button class="copy-btn" onclick="copyReadme()">Copy README Code</button>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h2>Check Netlify Deployment</h2>
+                <p>Netlify will automatically detect changes and deploy your site.</p>
+                <p>Wait 2-3 minutes after adding files, then check your website:</p>
+                
+                <a href="https://al-syeds-mart.netlify.app" class="btn btn-primary">Check Your Website</a>
+                <a href="https://app.netlify.com" class="btn btn-secondary">Netlify Dashboard</a>
+            </div>
+            
+            <div class="tip">
+                <h2>Need More Help?</h2>
+                <p>If your website still shows "Page not found":</p>
+                <p>1. Make sure Netlify is connected to your GitHub repository</p>
+                <p>2. Check that index.html is in the main branch</p>
+                <p>3. Verify Netlify build settings (publish directory should be set to the root)</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>This guide will help you add files to your GitHub repository and fix your Netlify website.</p>
+    </footer>
+
+    <script>
+        function copyCode() {
+            const code = document.getElementById('htmlCode').textContent;
+            copyToClipboard(code, 'HTML code copied! Paste it into your index.html file.');
+        }
+        
+        function copyReadme() {
+            const code = document.getElementById('readmeCode').textContent;
+            copyToClipboard(code, 'README code copied! Paste it into your README.md file.');
+        }
+        
+        function copyToClipboard(text, message) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(message);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Copy failed. Please manually select and copy the code.');
+            });
+        }
+    </script>
+</body>
+</html>
